@@ -1,0 +1,104 @@
+
+ion-content{
+    --background:none;
+    background: url("../../assets/background/nubes.webm") no-repeat center / cover;
+  }
+
+  ion-card{
+    background: transparent;
+   
+  }
+
+  ion-button{
+      margin-top: 15px;
+  }
+#video{
+    z-index: -1;
+    position: absolute;
+}
+
+.iconUser{
+    font-size: 600%;
+}
+ion-header{
+    *{
+        background-color: rgb(56, 56, 56);
+        color: white;
+    }
+    p{
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+        transform: translateY(-8px);
+    }
+    img{
+       // animation-name: vibrar;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+    }
+}
+.iconUser:hover{
+   animation-name: seleccionado;
+   animation-duration: 0.5s;
+}
+.imgDespertador{
+    transform: translateY(12px);
+    max-width: 50px;
+    max-height: 50px;
+}
+@keyframes vibrar{
+    from{
+        transform: rotateZ(-10deg) ;
+    }
+    9%{
+        transform: rotateZ(0deg);
+    }    
+    18%{
+        transform: rotateZ(10deg);
+    }
+    27%{
+        transform: rotateZ(0deg);
+    }
+    36%{
+        transform: rotateZ(-10deg);
+    }
+    45%{
+        transform: rotateZ(0deg);
+    }
+    54%{
+        transform: rotateZ(10deg);
+    }    
+    63%{
+        transform: rotateZ(0deg);
+    }
+    72%{
+      transform: rotateZ(-10deg);
+    }
+    81%{
+        transform: rotateZ(0deg);
+    }
+    90%{
+        transform: rotateZ(10deg);
+    }
+    99%{
+        transform: rotateZ(0deg);
+    }
+    to{
+    transform: rotateZ(-10deg);
+    }
+}
+@keyframes seleccionado{
+    from{
+        transform: rotateX(360deg);
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+    to{
+        transform: rotateX(0deg);
+        color: green;
+
+    }
+}
+

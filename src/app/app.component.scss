@@ -1,0 +1,110 @@
+// SPLASH---------------------------------------
+#custom-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100000;
+    width:100%;
+    background-color: #002a3e;
+  }
+  #despertador{
+      z-index: -10;
+      position: absolute;
+      width: 35%;
+      top: 47%;
+      left: 53%;
+      animation-name: viajando;
+      animation-duration: 12s;
+  }
+  @keyframes viajando{
+      from{
+        z-index: 99999999;
+        top: 47%;
+      }
+      30%{
+        transform: rotateZ(0deg);
+        top: 27%;
+        left: 53%;
+
+      }
+      40%{
+        transform: rotateZ(-90deg);
+
+      }
+      50%{
+        transform: rotateZ(-90deg);
+        top: 27%;
+        left: -2%;
+      }
+      51%{
+        transform: rotateZ(-60deg);
+      }
+      53%{
+        transform: rotateZ(-90deg);
+      }
+      56%{
+        transform: rotateZ(-60deg);
+      }
+      59%{
+        transform: rotateZ(-90deg);
+      }
+      62%{
+        transform: rotateZ(-60deg);
+
+      } 
+      65%{
+        transform: rotateZ(-90deg);
+      }
+      68%{
+        transform: rotateZ(-60deg);
+      }
+      71%{
+        transform: rotateZ(-90deg);
+      }
+      74%{
+        transform: rotateZ(-60deg);
+      }
+      77%{
+        transform: rotateZ(-90deg);
+      }
+      80%{
+        transform: rotateZ(-60deg);
+      }
+      83%{
+        transform: rotateZ(-90deg);
+      }
+      86%{
+        transform: rotateZ(-60deg);
+      }
+      89%{
+        transform: rotateZ(-90deg);
+
+      }
+      92%{
+        transform: rotateZ(-60deg);
+      }
+      95%{
+        transform: rotateZ(-90deg);
+
+      }
+      to{
+        transform: rotateZ(-60deg);
+        top: 27%;
+        left: -2%;
+        z-index: 99999999;
+    }
+  } 
+  .flb {
+    // background-color: #3ebffb;  
+    --background:none;
+    background: url("../assets/images/splash.png") no-repeat center / cover;
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+//   END SPLASH-------------------------------------------
